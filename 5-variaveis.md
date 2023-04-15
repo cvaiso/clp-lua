@@ -2,14 +2,15 @@
 - Tipos primitivos
 	- nil: Indica a ausência de valor. É diferente de uma variável não inicializada ou de um valor nulo, é um valor em si mesmo.
 	- boolean: Pode assumir o valor true ou o valor false.
+	- table: É o único tipo de dado composto em Lua, que permite armazenar qualquer tipo de valor como índices e seus valores correspondentes.
 	- number: Pode ser inteiro ou em notação de ponto flutuante. Não há distinção entre tipos inteiros e de ponto flutuante, pois o tipo number pode assumir valores inteiros e de ponto flutuante.
 	- string: Sequência de caracteres.
 	- function: Função em Lua é um tipo de valor. Funções podem ser armazenadas em variáveis, passadas como argumentos para outras funções e retornadas como valores de outras funções.
-	- userdata: É um tipo genérico que permite a alocação de qualquer tipo de dado em Lua. É útil quando se deseja alocar um tipo de dado específico, como uma estrutura ou objeto.
-	- thread: Corrotina em Lua é um tipo de valor que permite a execução de múltiplas tarefas simultaneamente, sem a necessidade de utilizar múltiplos threads do sistema operacional.
-	- table: É o único tipo de dado composto em Lua, que permite armazenar qualquer tipo de valor como índices e seus valores correspondentes.
+	- userdata: É um tipo genérico que permite a alocação de qualquer tipo de dado em Lua. Usado para interoperabilidade com a API de C.
+	- thread: Corrotinas em Lua são um tipo de valor que permite a execução de múltiplas tarefas simultaneamente de forma colaborativa (não paralela).
+	
 - Em Lua, não existem classes ou tipos primitivos com wrappers equivalentes, todos os tipos são tratados como valores em si mesmos.
-- Para Lua, temos algumas diferenças em relação ao sistema de tipos em comparação com Java. A linguagem Lua possui um sistema de tipos dinâmico, o que significa que a verificação de tipos é feita em tempo de execução. Veja abaixo algumas informações sobre as estruturas de tipos em Lua:
+- A linguagem Lua possui um sistema de tipos dinâmico, o que significa que a verificação de tipos é feita em tempo de execução. Veja abaixo algumas informações sobre as estruturas de tipos em Lua:
 
 - Cadeia de Caracteres
 	- Em Lua, a string é uma estrutura nativa da linguagem;
