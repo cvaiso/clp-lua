@@ -1,0 +1,11 @@
+# Principais características
+- Paradigma: imperativo e orientado a objetos
+- Método de implementação: híbrido
+- Principais influências: C++, Modula-3
+- Características gerais:
+	- Linguagem de propósito geral;
+	- Possui um sistema de coleta de lixo;
+	- A primeira com recursos para a web (Applets);
+	- Alta portabilidade;
+	- É uma linguagem que prioriza a confiabilidade em sacrifício da eficiência, por realizar diversas verificações e não executar muitas conversões automáticas;
+	- Uma das linguagens mais utilizadas atualmente (oscila entre o 1º e 2º lugares com o C nos principais rankings).
