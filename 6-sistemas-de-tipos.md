@@ -98,6 +98,18 @@ Carta = {
 	- Ao tentar efetuar uma operação de soma sobre uma variável que armazena o valor de uma função, a linguagem reporta um erro de execução.
 
 - Equivalência de Tipos
-	- Em Lua, existe o conceito de "equivalência de tipos".Quando dois valores são comparados em Lua, eles podem ser do mesmo tipo ou de tipos diferentes.
+	- Realiza equivalencia de tipos (???????)
 	- Lua realiza a coerção de tipos automaticamente, convertendo um dos valores para o tipo do outro valor antes da comparação ser realizada.
-	- Dois valores podem ser equivalentes, mesmo que sejam de tipos diferentes, desde que tenham o mesmo valor semântico.
+	Qualquer operação aritmética aplicada sobre cadeias de caracteres tenta converter a cadeia de caracteres no valor numérico correspondente. Quando a conversão não é possível, a linguagem reporta um erro de execução.
+	```
+	b = "53"
+	c = 2 + b
+	--resulta no armazenamento do valor numérico 55 na variável c, tendo em vista que a cadeia de caracteres 53 foi convertida para o valor numérico 53 antes da operação
+	```
+	- Dois valores podem ser equivalentes, mesmo que sejam de tipos diferentes, desde que tenham o mesmo valor semântico. Como no exemplo acima.
+	- Por outro lado, quando utilizamos um valor numérico onde espera-se uma cadeia de caracteres, o valor numérico é convertido para a cadeia de caracteres correspondente.
+	```
+	print("resultado: " .. 23)
+	--tem como saída a cadeia de caracteres:
+	resultado: 23.
+	```
