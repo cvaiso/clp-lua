@@ -3,7 +3,8 @@
 - Padrão Unicode.
 - As palavras especiais são reservadas.
 - Não há limites no tamanho dos nomes;
-- Nomes começam obrigatoriamente com letras e podem ter letras, números e underline (_).
+- Nomes começam obrigatoriamente com letras ou underline (_).
+- Caracteres especiais, como @, #, $ e %, não são permitidos nos identificadores.
 - Recomenda-se que:
 	- nomes de classes comecem com letras maiúsculas; 
 	- nomes de constantes sejam escritos somente com letras maiúsculas e underline; e 
