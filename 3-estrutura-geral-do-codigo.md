@@ -5,3 +5,5 @@
 - Os comandos de Lua podem OPCIONALMENTE ser separados por ponto e vírgula (;).
 - Comentários iniciam-se com traços duplos (--) e persistem até o final da linha.
 - As variáveis não têm tipo. Os tipos estão associados aos dados armazenados na variável.
+- O identificador pode ser qualquer string de letras, números e sublinhados( _ ) desde que não comece com um número ou caractere especial.
+- Case-sensitive: Lua faz distinção entre maiúsculas e minúsculas em identificadores. Por exemplo, nome e Nome são identificadores diferentes.
