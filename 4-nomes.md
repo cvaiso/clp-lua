@@ -1,5 +1,5 @@
 # Nomes
-- Case-sensitive.
+- Case-sensitive: Lua faz distinção entre maiúsculas e minúsculas em identificadores. Por exemplo, nome e Nome são identificadores diferentes.
 - Padrão Unicode.
 - As palavras especiais são reservadas.
 - Não há limites no tamanho dos nomes;
