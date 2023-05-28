@@ -1,6 +1,6 @@
 # Nomes
 - Case-sensitive: Lua faz distinção entre maiúsculas e minúsculas em identificadores. Por exemplo, nome e Nome são identificadores diferentes.
-- Padrão Unicode.
+- Padrão Unicode. ???????
 - As palavras especiais são reservadas.
 - Não há limites no tamanho dos nomes;
 - Nomes começam obrigatoriamente com letras ou underline (_).
