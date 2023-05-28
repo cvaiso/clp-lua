@@ -1,11 +1,11 @@
 # Principais características
-- Paradigma: imperativo e orientado a objetos
+- Paradigma: Multiparadigma (imperativo, orientado a objetos e possui suporte limitado a alguns conceitos da programação funcional)
 - Método de implementação: híbrido
-- Principais influências: C++, Modula-3
+- Principais influências: Icon. Pascal e Scheme
 - Características gerais:
-	- Linguagem de propósito geral;
+	- facilidade de incorporação de uma aplicação LUA em outras linguagens, como C. Isso se deve principalmente por causa de sua API que se comunica com C, C++, entre outras linguagens.
 	- Possui um sistema de coleta de lixo;
-	- A primeira com recursos para a web (Applets);
+	- Não contém apoio explícito à herança, mas permite que ela seja executada com relativa facilidade com metatables.
 	- Alta portabilidade;
-	- É uma linguagem que prioriza a confiabilidade em sacrifício da eficiência, por realizar diversas verificações e não executar muitas conversões automáticas;
-	- Uma das linguagens mais utilizadas atualmente (oscila entre o 1º e 2º lugares com o C nos principais rankings).
+	- Permite que programadores quando implementam nomes, classes, e outras funções, empreguem poderosas técnicas de programação funcional e completos escopos lexicais. 
+	- Bastante comum o uso de Lua como um interpretador stand-alone.
