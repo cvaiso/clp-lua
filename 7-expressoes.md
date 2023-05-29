@@ -21,3 +21,12 @@ A coluna "Associatividade" indica se o operador é associativo à esquerda ou à
 - Lua permite a sobrecarga de operadores apenas por metatables, mas não há como criar novos operadores.
 Por exemplo, você pode definir o metamétodo __add para personalizar a operação de adição (+) para seus objetos personalizados. Quando o operador + é usado entre dois objetos com uma metatabela definida, o metamétodo __add é chamado para realizar a operação desejada.
 - Os operadores relacionais retornam false e true.(??? testar)
+- Não possui operadores de atribuição composta nem atribuição unária (++ e --);
+- Há atribuição múltipla. permite a troca de valores armazenados em duas variáveis com um único comando.
+```
+  a, b = b, a
+  -- faz com que a receba o valor anteriormente armazenado por b e que b receba o valor anteriormente armazenado por a, sem necessidade de variáveis temporárias.
+```
+- A atribuição gera uma expressão cujo resultado é o valor atribuído:(????)
+	a = b = c = 0;
+- Não possui atribuição condicional nem atribuição de lista (????)
