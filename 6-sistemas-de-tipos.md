@@ -92,13 +92,7 @@ Carta = {
 	
 	```
 - Verificação
-	- Lua é uma linguagem fracamente tipada, o que significa que a verificação de tipos é feita em tempo de execução;
-	- É possível converter tipos de forma explícita com a função tonumber para números
-	-Quando se atribui um valor a uma variável, é armazenado na variável um valor de um determinado tipo. Se é feita uma outra atribuição à mesma variável, ela passa a armazenar um valor de um tipo possivelmente diferente.
-	- Ao tentar efetuar uma operação de soma sobre uma variável que armazena o valor de uma função, a linguagem reporta um erro de execução.
-
-- Equivalência de Tipos
-	- Realiza equivalencia de tipos (???????)
+	- Lua é uma linguagem fracamente tipada, o que significa que existem algumas coerções;
 	- Lua realiza a coerção de tipos automaticamente, convertendo um dos valores para o tipo do outro valor antes da comparação ser realizada.
 	Qualquer operação aritmética aplicada sobre cadeias de caracteres tenta converter a cadeia de caracteres no valor numérico correspondente. Quando a conversão não é possível, a linguagem reporta um erro de execução.
 	```
@@ -113,3 +107,9 @@ Carta = {
 	--tem como saída a cadeia de caracteres:
 	resultado: 23.
 	```
+
+	- É possível converter tipos de forma explícita com a função tonumber para números
+	-Quando se atribui um valor a uma variável, é armazenado na variável um valor de um determinado tipo. Se é feita uma outra atribuição à mesma variável, ela passa a armazenar um valor de um tipo possivelmente diferente.
+	- Ao tentar efetuar uma operação de soma sobre uma variável que armazena o valor de uma função, a linguagem reporta um erro de execução.
+
+
