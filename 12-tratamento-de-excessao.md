@@ -1,6 +1,12 @@
 # Tratamento de Exceção
 
+O sistema de lua é rudimentar por ser uma linguagem embarcada de extensão, todas as ações de Lua começam a partir do código no programa hospedeiro que chama uma função da biblioteca de Lua. Sempre que um erro ocorre durante a compilação ou execução, o controle retorna para o hospedeiro, que pode tomar as medidas apropriadas. 
+
 Um erro em lua pode ser levantado com a função `error`, ou com a função `assert` que só da erro caso uma condição falhe.
+
+`error (message [, level])` 
+
+Termina a última função protegida chamada e retorna `message` como uma mensagem de erro. Geralmente, `error` adiciona alguma informação sobre a posição do erro no início da mensagem. O argumento `level` especifica como obter a posição do erro.
 
 ```lua
 if type(x) ~= 'number' then
@@ -22,7 +28,7 @@ local file = assert(io.read(filename))
 
 ## Tratamento
 
-Para detectar um erro em lua é usado a função `pcall` (protected call).
+Se você precisa capturar erros em Lua, você pode usar a função `pcall` (protected call). Isto significa que qualquer erro dentro da função passada como parâmetro não é propagado. Ao invés disso, `pcall` captura o erro e retorna um código indicando o status.
 
 ```lua
 function divide(a, b)
@@ -47,6 +53,6 @@ local ok, err = pcall(function()
 end)
 ```
 
-Quando não há erros `pcall` retorna `true` mais os valores normais da função chamada, caso contrario retorna `false` mais a mensagem de erro.
+Seu primeiro resultado é o código de status (um booleano), que é verdadeiro se a chamada aconteceu sem erros. Neste caso, `pcall` também retorna todos os resultados da chamada, depois deste primeiro resultado.
 
-> O sistema de lua é rudimentar pelo objetivo de ser uma linguagem embarcada. Geralmente o tratamento de erros é feito pelo código da aplicação, aquele que usa lua como biblioteca.
+No caso de acontecer um erro, pcall retorna false mais a mensagem de erro.
