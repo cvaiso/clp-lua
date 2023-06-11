@@ -16,6 +16,8 @@
 |11 | `and` | E Lógico | esquerda |
 |12 | `or` | Ou Lógico | esquerda |
 
+> As expressões bitwise e bit shifts são de versões mais novas talvez elas não estejam presentes
+
 A tabela apresenta a ordem de precedência e associatividade dos operadores do Lua, em que os operadores de menor precedência aparecem no final da tabela. 
 A coluna "Operador" apresenta o símbolo que representa o operador em questão, enquanto a coluna "Comentários" oferece um breve comentário sobre a função do operador. 
 A coluna "Associatividade" indica se o operador é associativo à esquerda ou à direita.
