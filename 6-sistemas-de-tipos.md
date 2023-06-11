@@ -42,8 +42,26 @@ str1 = str1 .. "D" -- a concatenação de strings é feita com ".."
 		end
 	end
 	```
+## Metatables
 
-- Verificação
+Metatables permitem modificar o comportamento de uma tabela com sobrecarga de operadores.
+Uma metatable é uma table com chaves especiais que dizem o comportamento.
+
+```lua
+vector = {x=0,y=6}
+vector_meta = {
+	__add = function(a, b)
+		return { x = a.x + b.x, y = a.y + b.y }
+	end
+}
+
+setmetatable(vector, vector_meta)
+
+vector + other_vector --> vai chamar a função definida no meta
+```
+
+
+## Verificação
 	- Lua é uma linguagem fracamente tipada, o que significa que existem algumas coerções;
 	- Lua realiza a coerção de tipos automaticamente, convertendo um dos valores para o tipo do outro valor antes da comparação ser realizada.
 	Qualquer operação aritmética aplicada sobre cadeias de caracteres tenta converter a cadeia de caracteres no valor numérico correspondente. Quando a conversão não é possível, a linguagem reporta um erro de execução.
