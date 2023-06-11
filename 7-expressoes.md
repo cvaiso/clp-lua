@@ -31,5 +31,7 @@ Por exemplo, você pode definir o metamétodo __add para personalizar a operaç�
   -- uma função pode retornar multiplos valores
 
   a, b = b, a
-  -- faz com que a receba o valor anteriormente armazenado por b e que b receba o valor anteriormente armazenado por a, sem necessidade de variáveis temporárias.
+  -- faz com que a receba o valor anteriormente armazenado por b e 
+  -- que b receba o valor anteriormente armazenado por a, 
+  -- sem necessidade de variáveis temporárias.
 ```
