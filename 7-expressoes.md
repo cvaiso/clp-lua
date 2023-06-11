@@ -8,10 +8,6 @@
 | 3 | `* / // %` | Mult., Div., Resto | esquerda |
 | 4 | `+ -` | Soma, Sub. | esquerda |
 | 5 | `..` | Concatenação | direita |
-| 6 | `<< >>` | Bit Shifts | esquerda |
-| 7 | `&` | Bitwise And | esquerda |
-| 8 | `~` | Bitwise Xor | esquerda |
-| 9 | `\|` | Bitwise Or | esquerda |
 |10 | `< > <= >= ~= ==` | Relacionais | esquerda |
 |11 | `and` | E Lógico | esquerda |
 |12 | `or` | Ou Lógico | esquerda |
