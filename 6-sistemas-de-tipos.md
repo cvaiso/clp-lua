@@ -22,24 +22,12 @@ str1 = "ABC"
 str2 = "ABC"
 str1 = str1 .. "D" -- a concatenação de strings é feita com ".."
 ```
-- Tipos ordinais definidos pelo usuário:
-	- Em Lua, podemos utilizar tabelas para criar tipos ordinais definidos pelo usuário;
-	- As tabelas podem ter índices numéricos ou de texto e podem conter qualquer tipo de valor, incluindo funções e outras tabelas;
-```
-Carta = {
-	J = 11,
-	Q = 12,
-	K = 13,
-	A = 14
-}
-```
+
 - Vetores/Matrizes
-	- Em Lua, podemos utilizar tabelas como vetores/matrizes;
+	- Em Lua, podemos utilizar tabelas como listas;
 	- Tabelas podem ter índices numéricos ou de texto;
 	- Tabelas não têm tamanho fixo;
-	- Há suporte para vetores associativos;
 	- Tabelas podem ser manipuladas facilmente com funções como table.insert e table.remove;
-	- Há suporte para fatias;
 	```
 	vetor = {}
 	for i = 1, 10 do
@@ -55,42 +43,6 @@ Carta = {
 	end
 	```
 
-- Registros e uniões
-	- Em Lua, podemos utilizar tabelas para simular registros e uniões;
-	- Lua usa o nome do campo como um índice.
-	- Uma tabela pode conter chaves com nomes e valores correspondentes, simulando um registro;
-	- Uma tabela pode conter uma chave especial __tag que indica o tipo de união que a tabela representa;
-	```
-	pessoa = {
-		nome = "João",
-		idade = 30,
-		salario = 1000.00
-	}
-	
-	-- União de tipos
-	pessoa = {
-		__tag = "Pessoa",
-		nome = "João",
-		idade = 30,
-		salario = 1000.00
-	}
-	
-	animal = {
-		__tag = "Animal",
-		especie = "Cão",
-		nome = "Rex"
-	}
-	```
-
-- Ponteiros e referências
-	- Em Lua, não existem ponteiros;
-	- Todos os valores em Lua são referências;
-	- É possível usar o tipo Userdata para armazenar ponteiros para objetos externos ou valores em C/C++ usando a API de Lua.
-	- O coletor de lixo é responsável por desalocar a memória não utilizada automaticamente;
-	```
-	p = {}
-	
-	```
 - Verificação
 	- Lua é uma linguagem fracamente tipada, o que significa que existem algumas coerções;
 	- Lua realiza a coerção de tipos automaticamente, convertendo um dos valores para o tipo do outro valor antes da comparação ser realizada.
